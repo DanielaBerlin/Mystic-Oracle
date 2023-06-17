@@ -1,48 +1,40 @@
-.container {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
+h1 {
+  font-family: 'Pirata one', cursive;
 }
 
-h2 {
-  text-align: center;
-}
-
-form {
+.card-container {
+  display: flex;
+  justify-content: space-around;
   margin-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
 }
 
-label {
-  font-weight: bold;
-}
-
-input[type="number"] {
-  width: 100%;
-  padding: 5px;
-}
-
-.get-cards {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  margin-top: 10px;
-  background-color: #007bff;
-  color: #fff;
-  text-align: center;
-  cursor: pointer;
-}
-
-.cards {
-  list-style-type: none;
-  padding: 0;
-}
-
-.cards li {
+.card-wrapper {
+  position: relative;
   margin-bottom: 10px;
 }
 
-.cards hr {
+.card {
+  width: 500px;
+  height: 400px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.get-card {
+  position: absolute;
+  margin-bottom: 50px;
+  top: 10px;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
   border: none;
-  border-top: 1px solid #ccc;
-  margin: 20px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+button:hover {
+  background-color: #0056b3;
+  font-family: 'Pirata one', cursive;
 }
