@@ -1,0 +1,145 @@
+:root {
+  --pink: #f9b5da;
+  --purple: #d9b5fe;
+  --blue: #79cbff;
+  --dark: #120052;
+  --green: #82e0bf;
+  --yellow: #fef7ae;
+  --magenta: #ee2d97;
+}
+
+html {
+  margin: 0;
+  background: radial-gradient(circle, #f9b5da, #79cbff, #f9b5da, #79cbff);
+  width: 100vw;
+  height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  font-size: 90px;
+  font-weight: 600;
+  font-family: 'Pirata one', cursive;
+  color: var(--dark);
+  text-shadow: 2px 2px 0px var(--yellow), 4px 4px 0px var(--green),
+    6px 6px 0px var(--purple), 8px 8px 0px var(--pink);
+  padding-bottom: 15px;
+}
+
+h2 {
+  text-justify: auto;
+  font-size: 60px;
+  font-weight: 600;
+  font-family: 'Pirata one', cursive;
+  color: var(--dark);
+  text-shadow: 2px 2px 0px var(--yellow), 4px 4px 0px var(--green),
+    6px 6px 0px var(--purple), 8px 8px 0px var(--pink);
+  padding-left: 110px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+p,
+.instructions {
+  text-align: auto;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: 'Roboto', sans-serif;
+  color: var(--dark);
+  text-shadow: 2px 2px 0px var(--purple);
+  padding: 110px;
+  padding-bottom: 10px;
+  padding-top: 15px;
+}
+
+.button {
+  display: flex;
+  background: linear-gradient(
+    to right,
+    var(--yellow),
+    var(--green),
+    var(--purple),
+    var(--pink),
+    var(--blue)
+  );
+  background-size: 500% auto;
+  font-family: 'Pirata one', cursive;
+  transition: background-position 0.5s ease;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  margin: auto;
+  text-decoration: none;
+  margin-bottom: 50px;
+}
+
+.button a {
+  text-decoration: none;
+}
+
+.button:hover {
+  background-position: 100% 0;
+}
+
+.disclaimer {
+  text-align: auto;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: 'Roboto', sans-serif;
+  color: #611111;
+  text-shadow: 2px 2px 0px var(--purple);
+  padding: 110px;
+  padding-bottom: 10px;
+  padding-top: 15px;
+}
+
+@media (max-width: 768px) {
+  html {
+    margin: 0;
+    background: radial-gradient(circle, #f0bdd9, #92c7e9, #f0bdd9, #92c7e9);
+    width: 100vw;
+    height: 100vh;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 30px;
+    padding-left: 50px;
+    padding-bottom: 5px;
+  }
+
+  p,
+  .instructions {
+    text-align: auto;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    color: var(--dark);
+    text-shadow: 2px 2px 0px var(--purple);
+    padding: 5px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+  }
+
+  .instructions li {
+    margin: 5px;
+    text-align: justify;
+  }
+
+  .disclaimer {
+    text-align: auto;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    color: #611111;
+    text-shadow: 2px 2px 0px var(--purple);
+    padding: 20px;
+    padding-bottom: 10px;
+    padding-top: 15px;
+  }
+}

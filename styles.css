@@ -117,3 +117,17 @@ h1 {
   box-shadow: inset #f9b5da 0 0 0 5px, inset #d9b5fe 0 0 0 1px,
     inset #79cbff 0 0 0 10px, inset #82e0bf 0 0 0 11px, inset #fef7ae 0 0 0 16px;
 }
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 40px;
+  }
+  .card-container {
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+    flex-direction: column-reverse;
+    align-content: space-around;
+    align-items: center;
+  }
+}
