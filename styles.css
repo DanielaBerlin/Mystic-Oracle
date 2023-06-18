@@ -1,40 +1,119 @@
+:root {
+  --pink: #f9b5da;
+  --purple: #d9b5fe;
+  --blue: #79cbff;
+  --dark: #120052;
+  --green: #82e0bf;
+  --yellow: #fef7ae;
+  --magenta: #ee2d97;
+}
+
+html {
+  margin: 0;
+  background: radial-gradient(circle, #f1ecc9, #c7edf0, #f1ecc9, #c7edf0);
+  width: 100vw;
+  height: 100vh;
+}
+
 h1 {
+  text-align: center;
+  font-size: 90px;
+  font-weight: 600;
   font-family: 'Pirata one', cursive;
+  color: var(--dark);
+  text-shadow: 2px 2px 0px var(--yellow), 4px 4px 0px var(--green),
+    6px 6px 0px var(--purple), 8px 8px 0px var(--pink),
+    10px 10px 0px var(--blue);
 }
 
 .card-container {
   display: flex;
-  justify-content: space-around;
-  margin-bottom: 20px;
   font-family: 'Roboto', sans-serif;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px;
 }
 
-.card-wrapper {
-  position: relative;
+.card-container > * {
+  width: calc(100% / 3);
+}
+
+.button {
+  background: linear-gradient(
+    to right,
+    var(--yellow),
+    var(--green),
+    var(--purple),
+    var(--pink),
+    var(--blue)
+  );
+  background-size: 500% auto;
+  font-family: 'Pirata one', cursive;
+  transition: background-position 0.5s ease;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 20px;
   margin-bottom: 10px;
+}
+
+.button:hover {
+  background-position: 100% 0;
 }
 
 .card {
-  width: 500px;
-  height: 400px;
-  border-radius: 5px;
-  margin-bottom: 10px;
+  color: var(--dark);
+  padding: 5px;
+  margin-left: 15px;
 }
 
-.get-card {
-  position: absolute;
-  margin-bottom: 50px;
-  top: 10px;
-  padding: 10px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  z-index: 1;
+.card ul {
+  margin: 0px;
+  padding: 0px;
 }
 
-button:hover {
-  background-color: #0056b3;
-  font-family: 'Pirata one', cursive;
+.card li {
+  list-style: none;
+  margin: 5px;
+  text-align: justify;
+}
+
+.card img {
+  max-width: 40%;
+  height: auto;
+  margin-top: 5px;
+}
+
+.card ul li strong {
+  font-weight: bold;
+  color: var(--magenta);
+}
+
+.past {
+  line-height: 30px;
+  font-weight: bold;
+  color: #120052;
+  padding: 40px;
+  box-shadow: inset #f9b5da 0 0 0 5px, inset #d9b5fe 0 0 0 1px,
+    inset #79cbff 0 0 0 10px, inset #82e0bf 0 0 0 11px, inset #fef7ae 0 0 0 16px;
+}
+
+.present {
+  line-height: 30px;
+  font-weight: bold;
+  color: #120052;
+  padding: 40px;
+  box-shadow: inset #f9b5da 0 0 0 5px, inset #d9b5fe 0 0 0 1px,
+    inset #79cbff 0 0 0 10px, inset #82e0bf 0 0 0 11px, inset #fef7ae 0 0 0 16px;
+}
+
+.future {
+  line-height: 30px;
+  font-weight: bold;
+  color: #120052;
+  padding: 40px;
+  box-shadow: inset #f9b5da 0 0 0 5px, inset #d9b5fe 0 0 0 1px,
+    inset #79cbff 0 0 0 10px, inset #82e0bf 0 0 0 11px, inset #fef7ae 0 0 0 16px;
 }

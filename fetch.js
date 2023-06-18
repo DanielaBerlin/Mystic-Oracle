@@ -4,8 +4,8 @@ const tarotAPI = 'tarot-images.json';
 
 function getCard(buttonIndex) {
   fetch(tarotAPI)
-    .then(response => response.json())
-    .then(data => {
+    .then((response) => response.json())
+    .then((data) => {
       const cards = data.cards;
       const randomIndex = Math.floor(Math.random() * cards.length);
       const card = cards[randomIndex];
@@ -15,25 +15,30 @@ function getCard(buttonIndex) {
       cardElement.classList.add('card');
       cardElement.innerHTML = `
         <ul>
-          <li>Description: ${data.description}</li>
-          <li>Name: ${card.name}</li>
-          <li>Number: ${card.number}</li>
-          <li>Arcana: ${card.arcana}</li>
-          <li>Suit: ${card.suit}</li>
-          <li>Image: <img src="${imagePath}" alt="${card.name}" /></li>
-          <li>Fortune Telling: ${card.fortune_telling.join(', ')}</li>
-          <li>Keywords: ${card.keywords.join(', ')}</li>
-          <li>Meanings:</li>
+          <li><strong>Description:</strong> ${data.description}</li>
+          <li><strong>Name:</strong>  ${card.name}</li>
+          <li><strong>Number:</strong>  ${card.number}</li>
+          <li><strong>Arcana:</strong>  ${card.arcana}</li>
+          <li><strong>Suit:</strong>  ${card.suit}</li>
+          <li><strong>Image:</strong></li> 
+          <li>
+          <div class="card-image">
+          <img src="${imagePath}" alt="${card.name}" />
+          </div>
+          </li>
+          <li><strong>Fortune Telling:</strong>  ${card.fortune_telling.join(', ')}</li>
+          <li><strong>Keywords:</strong>  ${card.keywords.join(', ')}</li>
+          <li><strong>Meanings:</strong></li>
           <ul>
-            <li>Light: ${card.meanings.light.join(', ')}</li>
-            <li>Shadow: ${card.meanings.shadow.join(', ')}</li>
+            <li><strong>Light:</strong>  ${card.meanings.light.join(', ')}</li>
+            <li><strong>Shadow:</strong>  ${card.meanings.shadow.join(', ')}</li>
           </ul>
-          <li>Archetype: ${card.Archetype}</li>
-          <li>Hebrew Alphabet: ${card['Hebrew Alphabet']}</li>
-          <li>Numerology: ${card.Numerology}</li>
-          <li>Elemental: ${card.Elemental}</li>
-          <li>Mythical/Spiritual: ${card['Mythical/Spiritual']}</li>
-          <li>Questions to Ask: ${card['Questions to Ask'].join(', ')}</li>
+          <li><strong>Archetype:</strong>  ${card.Archetype}</li>
+          <li><strong>Hebrew Alphabet:</strong>  ${card['Hebrew Alphabet']}</li>
+          <li><strong>Numerology:</strong>  ${card.Numerology}</li>
+          <li><strong>Elemental:</strong>  ${card.Elemental}</li>
+          <li><strong>Mythical/Spiritual:</strong>  ${card['Mythical/Spiritual']}</li>
+          <li><strong>Questions to Ask:</strong>  ${card['Questions to Ask'].join(', ')}</li>
         </ul>
         <hr>
       `;
@@ -41,7 +46,7 @@ function getCard(buttonIndex) {
       cardContainers[buttonIndex].innerHTML = '';
       cardContainers[buttonIndex].appendChild(cardElement);
     })
-    .catch(error => {
+    .catch((error) => {
       console.log('Error fetching card:', error);
     });
 }
@@ -51,4 +56,3 @@ btns.forEach((btn, index) => {
     getCard(index);
   });
 });
-
