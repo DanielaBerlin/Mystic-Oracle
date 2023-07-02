@@ -11,8 +11,6 @@
 html {
   margin: 0;
   background: radial-gradient(circle, #f9b5da, #79cbff, #f9b5da, #79cbff);
-  width: 100vw;
-  height: 100vh;
 }
 
 h1 {
@@ -46,7 +44,6 @@ p,
   font-weight: 600;
   font-family: 'Roboto', sans-serif;
   color: var(--dark);
-  text-shadow: 2px 2px 0px var(--purple);
   padding: 110px;
   padding-bottom: 10px;
   padding-top: 15px;
@@ -65,14 +62,18 @@ p,
   background-size: 500% auto;
   font-family: 'Pirata one', cursive;
   transition: background-position 0.5s ease;
-  padding: 10px 20px;
+  padding: 20px 30px;
   border: none;
   border-radius: 5px;
-  font-size: 20px;
+  font-size: 25px;
   cursor: pointer;
   margin: auto;
   text-decoration: none;
-  margin-bottom: 50px;
+  bottom: 50px;
+}
+
+.btn {
+  margin: 50px;
 }
 
 .button a {
@@ -97,10 +98,8 @@ p,
 
 @media (max-width: 768px) {
   html {
-    margin: 0;
+    margin: 10px;
     background: radial-gradient(circle, #f0bdd9, #92c7e9, #f0bdd9, #92c7e9);
-    width: 100vw;
-    height: 100vh;
   }
 
   h1 {
@@ -120,14 +119,12 @@ p,
     font-weight: 600;
     font-family: 'Roboto', sans-serif;
     color: var(--dark);
-    text-shadow: 2px 2px 0px var(--purple);
     padding: 5px;
     padding-bottom: 5px;
     padding-top: 5px;
   }
 
   .instructions li {
-    margin: 5px;
     text-align: justify;
   }
 
@@ -137,9 +134,11 @@ p,
     font-weight: 600;
     font-family: 'Roboto', sans-serif;
     color: #611111;
-    text-shadow: 2px 2px 0px var(--purple);
     padding: 20px;
-    padding-bottom: 10px;
-    padding-top: 15px;
+
+  }
+
+  .btn {
+  margin: 50px;
   }
 }
