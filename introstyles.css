@@ -50,12 +50,11 @@ p,
 
 .button {
   display: flex;
-  color: var(--dark);
   background: linear-gradient(
-    to right,
+    to left,
     var(--green),
-    var(--purple),
-    var(--pink),
+    var(--blue),
+    var(--green),
     var(--blue)
   );
   background-size: 500% auto;
@@ -96,8 +95,9 @@ p,
 
 @media (max-width: 768px) {
   html {
-    margin: 10px;
-    background: radial-gradient(circle, #f0bdd9, #92c7e9, #f0bdd9, #92c7e9);
+    margin-right: 10px;
+    margin-left: 2px;
+
   }
 
   h1 {

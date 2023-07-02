@@ -39,8 +39,8 @@ h1 {
   background: linear-gradient(
     to right,
     var(--green),
-    var(--purple),
-    var(--pink),
+    var(--blue),
+    var(--green),
     var(--blue)
   );
   background-size: 500% auto;
@@ -120,4 +120,24 @@ h1 {
     align-content: space-around;
     align-items: center;
   }
+
+  .button {
+  background: linear-gradient(
+    to right,
+    var(--green),
+    var(--purple),
+    var(--pink),
+    var(--blue)
+  );
+  background-size: 500% auto;
+  font-family: 'Pirata one', cursive;
+  transition: background-position 0.5s ease;
+  padding: 200px 500px;
+  border: none;
+  border-radius: 5px;
+  font-size: 200px;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
 }
