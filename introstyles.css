@@ -10,7 +10,7 @@
 
 html {
   margin: 0;
-  background: radial-gradient(circle, #f9b5da, #79cbff, #f9b5da, #79cbff);
+  background: radial-gradient(circle, #79cbff, #dbeff0, #79cbff);
 }
 
 h1 {
@@ -19,9 +19,9 @@ h1 {
   font-weight: 600;
   font-family: 'Pirata one', cursive;
   color: var(--dark);
-  text-shadow: 2px 2px 0px var(--yellow), 4px 4px 0px var(--green),
-    6px 6px 0px var(--purple), 8px 8px 0px var(--pink);
-  padding-bottom: 15px;
+  text-shadow: 4px 4px 0px var(--green),
+    6px 6px 0px var(--blue);
+  padding-bottom: 5px;
 }
 
 h2 {
@@ -30,11 +30,10 @@ h2 {
   font-weight: 600;
   font-family: 'Pirata one', cursive;
   color: var(--dark);
-  text-shadow: 2px 2px 0px var(--yellow), 4px 4px 0px var(--green),
-    6px 6px 0px var(--purple), 8px 8px 0px var(--pink);
+  text-shadow: 4px 4px 0px var(--green),
+    6px 6px 0px var(--blue);
   padding-left: 110px;
-  padding-bottom: 15px;
-  padding-top: 15px;
+  padding-bottom: 5px;
 }
 
 p,
@@ -46,14 +45,14 @@ p,
   color: var(--dark);
   padding: 110px;
   padding-bottom: 10px;
-  padding-top: 15px;
+  padding-top: 5px;
 }
 
 .button {
   display: flex;
+  color: var(--dark);
   background: linear-gradient(
     to right,
-    var(--yellow),
     var(--green),
     var(--purple),
     var(--pink),
